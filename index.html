@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профессиональные психологические и коучинговые сессии. Помощь в решении жизненных проблем, личностный рост и развитие. Запишитесь на консультацию прямо сейчас!">
+    <meta name="keywords" content="психолог, коучинг, психологическая помощь, консультация психолога, личностный рост">
+    <meta name="author" content="Психологическая практика">
+    <title>Психолог и коучинг-сессии | Помощь в личностном росте</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="header-content">
+            <div class="header-image">
+                <img src="img/лого.png" alt="Лого">
+            </div>
+            <div class="header-text">
+                <h1>Психолог и коучинг‑сессии</h1>
+                <p>Помощь в решении жизненных проблем, личностный рост и развитие. Запишитесь на консультацию прямо сейчас!</p>
+            </div>
+        </div>    
+        <a href="#contact" class="cta-button">Записаться на консультацию</a>
+    </header>
+
+    <!-- Блок преимуществ -->
+    <section>
+        <div class="container">
+            <h2>Почему стоит выбрать нас</h2>
+            <div class="benefits">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="img/женщина.png" alt="Врач" style="width: 70px; height: auto;">
+                    </div>
+                    <h3>Опытные специалисты</h3>
+                    <p>Все наши психологи и коучи имеют высшее образование и многолетний опыт работы.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="img/замок.png" alt="Замок" style="width: 60px; height: auto;">
+                    </div>
+                    <h3>Конфиденциальность</h3>
+                    <p>Гарантируем полную анонимность и соблюдение этических норм.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="img/руки.png" alt="Рукопожатие" style="width: 70px; height: auto;">
+                    </div>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Подбираем методики под ваши конкретные потребности и цели.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="img/интернет.png" alt="Интернет" style="width: 60px; height: auto;">
+                    </div>
+                    <h3>Онлайн и офлайн</h3>
+                    <p>Проводим сессии в удобном для вас формате — дистанционно или лично.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Отзывы клиентов</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Благодаря работе с психологом я смогла преодолеть тревожность и начать жить полной жизнью. Очень благодарна за поддержку!"</p>
+                    <div class="author">— Анна, 32 года</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Коучинг помог мне чётко сформулировать карьерные цели и разработать план их достижения. Результаты превзошли ожидания!"</p>
+                    <div class="author">— Дмитрий, 28 лет</div>
+                </div>
+                <div class="testimonial">
+                    <p>"Сессии с коучем дали мне инструменты для управления стрессом и улучшения отношений в семье."</p>
+                    <div class="author">— Елена, 45 лет</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section id="contact">
+        <div class="container">
+            <h2>Запишитесь на консультацию</h2>
+            <div class="contact-form">
+                <form id="consultationForm">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Психолог и коучинг-сессии. Все права защищены.</p>
+
+            <div class="social-links">
+                <a href="#" title="ВКонтакте">VK</a>
+                <a href="#" title="Telegram">TG</a>
+                <a href="#" title="YouTube">YT</a>
+            </div>
+
+            <p>Телефон: +7 (XXX) XXX-XX-XX | Email: info@example.com</p>
+            <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+            <p><a href="#" class="link-a">Перейти на главный сайт</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Валидация формы
+        document.getElementById('consultationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            
+            if (!name || !phone || !email) {
+                alert('Пожалуйста, заполните все обязательные поля!');
+                return;
+            }
+
+            alert('Ваша заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
